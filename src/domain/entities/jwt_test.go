@@ -1,4 +1,4 @@
-package access_token
+package entities
 
 import (
 	"github.com/stretchr/testify/assert"

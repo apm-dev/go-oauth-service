@@ -1,4 +1,4 @@
-package access_token
+package entities
 
 import "time"
 
@@ -17,6 +17,6 @@ func GetNewJWT() JWT {
 	}
 }
 
-func (jwt JWT) IsExpired() bool {
+func (jwt *JWT) IsExpired() bool {
 	return time.Unix(jwt.Expires, 0).Before(time.Now().UTC())
 }
